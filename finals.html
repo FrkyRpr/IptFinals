@@ -11,8 +11,6 @@
     
 </head>
 
-
-    
 <body>
 
     <div class="div1">
@@ -105,8 +103,7 @@
                 <br><br><br>
 
                 <button type="submit" id="submit" name="action">Submit</button>
-  
-            
+ 
             </form>
 
             </div>
@@ -138,15 +135,14 @@
                 <th scope="col">Essay</th>
 
                 </tr>
+                
             </thead>
             <tbody id="tbody"></tbody>
         </table>
+        <div class="delete-button">
+            <button id ="testbtn">Delete</button>
+        </div> 
     </div>
-
-
-
-
-     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.7/handlebars.min.js"></script>
@@ -177,15 +173,11 @@
 
     </script>
 
-
-
     <script>
 
       $(document).ready(function(){
 
           $('input[type="text"]').val('');
-
-
 
           $('#testbtn').click( function(event) {
               event.preventDefault();
@@ -194,7 +186,6 @@
               var formData =  $("#id").serializeArray();
 
               console.log(JSON.stringify(formData));
-
 
                   // send AJAX request
                   $.ajax({
@@ -269,13 +260,11 @@
                                   var toastHTML = '<i class="material-icons">error_outline</i>&nbsp;<span>' + response.message + '</span>';
                                   M.toast({html: toastHTML , classes: 'rounded'});                                  
 
-
                               }               
                           },
                           error: function(xhr, status, error) {
                               console.log(xhr.responseText);
                           }
-
 
                       });                 
           });
@@ -283,8 +272,5 @@
       });
       
     </script>
-
-
-
 </body>
 </html>
