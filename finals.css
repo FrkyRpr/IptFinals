@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9b59b6;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.div1 {
+    position: fixed; left: 50px; top: 200px;    
+}
+
+
+
+.container {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba (0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 100%;   
+}
+
+.header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.fieldset input[type="select"] {
+  /* Styling form-control Radio button and Checkbox */
+    font-size: 14px;
+    display: inline;
+    width: 80;
+}
+
+
+.form button {
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+
+.form2 {
+    padding: 30px 40px;
+}
+
+.row {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: fixed; right: 200px; top: 100px;
+}
+
+.row label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.row input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 12px;
+    padding: 7px;
+    width: 100%;
+}
+
+
+.rows2 {
+    position: fixed; right: 200px; top: 200px;
+    display: inline-block;
+    background-color: #fff;
+    border: 1px solid black;
+    margin-left: 30%;
+    width: 60%;
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+}
+
+.search-container input {
+    padding: 8px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-container label {
+    font-size: 16px;
+    font-weight: 1000;
+    margin-right: 10px;
+}
+
+.search-container button {
+    padding: 8px 30px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    transition: all 0.5s ease;
+}
+
+.delete-button button {
+    padding: 8px 30px;
+    font-size: 16px;
+    background-color: #2ecc71;
+    transition: all 0.5s ease;
+}
+
+.search-container button:hover {
+    background-color: #161616;
+    color: #fff;
+}
+
+.delete-button button:hover {
+    background-color: #161616;
+    color: #fff;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+th,
+td {
+    width: calc((100% / 9 ) - 20px);
+    text-align: start;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.form2 button {
+    background-color: #d084ee;
+    border: 2px solid #d084ee;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+}
+
+
